@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
     max-width: 1120px;
     margin: 20px auto;
-    width: 100px;
+    width: 98px;
     background-color: #fff;
     box-shadow: 0px 0px 5px #ccc;
     border-radius: 5px;
@@ -17,7 +17,7 @@ export const Container = styled.div`
     }
 `;
 
-export const InputContent = styled.div `
+export const InputContent = styled.div`
     display: flex;
     flex-direction: column;
 `;
@@ -38,7 +38,7 @@ export const RadioGroup = styled.div`
 
     input {
         margin-left: 10px;
-        margin-right: 5px;
+        margin-right: 15px;
         accent-color: black;
         margin-top: 1;
     }

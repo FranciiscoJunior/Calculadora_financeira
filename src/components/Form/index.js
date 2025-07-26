@@ -7,7 +7,7 @@ const Form = ({handleAdd, transactionsList, setTransactionsList }) => {
     const [amount, setAmount] = useState("");
     const [isExpense, setExpense] = useState("");
 
-    const generaateID = () => Math.round(Math.random() * 1000);
+    const generateID = () => Math.round(Math.random() * 1000);
 
     const handleSave = () => {
         if (!desc || !amount) {
@@ -19,7 +19,7 @@ const Form = ({handleAdd, transactionsList, setTransactionsList }) => {
         }
 
         const transaction = {
-            id: generaateID(),
+            id: generateID(),
             desc: desc,
             amount: amount,
             expense: isExpense,
@@ -72,7 +72,7 @@ const Form = ({handleAdd, transactionsList, setTransactionsList }) => {
                     <C.Button onClick={handleSave}>ADICIONAR</C.Button>
             </C.Container>
 
-            <Grid itens={transactionsList} setItens={setTransactionsList} />
+            <Grid items={transactionsList} setItems={setTransactionsList} />
         </>
     );
 };

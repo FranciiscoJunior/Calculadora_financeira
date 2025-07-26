@@ -1,15 +1,15 @@
 import React from "react";
-import * as C from "./style"
+import * as C from "./style";
 
 const ResumeItem = ({ title, Icon, value}) => {
     return (
-        <C.Container>
-            <C.Header>
-                <C.HeaderTitle>{title}</C.HeaderTitle>
-                <Icon />
-                <C.Total>{value}</C.Total>
-            </C.Header>
-        </C.Container>
+            <C.Container>
+                <C.Header>
+                    <C.HeaderTitle>{title}</C.HeaderTitle>
+                    <Icon />
+                    <C.Total>{value}</C.Total>
+                </C.Header>
+            </C.Container>
     );
 };
 
